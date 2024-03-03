@@ -1,0 +1,410 @@
+body, html
+{
+    padding:0;
+    margin:0;
+    background-color:#FFBB3E;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
+
+::-webkit-scrollbar
+{
+  display: none;
+}
+
+#parallaxBox
+{
+    /* The image used */
+    background-image: url("media/background2.png");
+
+    /* Full height */
+    height: 1150px;
+    width:100%;
+    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallaxCover
+{
+    position:absolute;
+    z-index:1;
+    top:0;
+    opacity:.51;
+    background-color: #1B1B1E;
+    width:100%;
+    height:1150px;
+}
+
+#logo
+{
+    position:relative;
+    z-index: 2;
+    top:250px;
+    display:block;
+    margin:auto;
+    width:min(1000px,76vw);
+    height:22.5vw;
+    background-image: url("media/MEA_LOGO_LTE.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.arrowDown
+{
+    position:relative;
+    z-index: 2;
+    top:400px;
+    display:block;
+    margin:auto;
+    width:40px;
+    height:22.8px;
+    background-image: url("media/arrowDown2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+  }
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+  }
+
+.bounce {
+    -webkit-animation: bounce 2s 10;
+    animation: bounce 2s 10;
+  }
+
+#mainContentBox
+{   position: relative;
+    display:block;
+    max-width:1150px;
+    height:1000px;
+    margin:auto;
+}
+
+#mainContentTitle
+{
+    display:inline-block;
+    position: absolute;
+    z-index: 2;
+    width:100%;
+    height:auto;
+    text-align: center;
+    font-size:min(65px, 5.5vw);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-transform:uppercase;
+    margin-top: -100px;
+    color:#FAA916;
+    text-shadow: -2px 2px 0px #96031A;
+}
+
+#TwoTitle
+{
+    display:inline-block;
+    font-size:80px;
+    color:#96031A;
+    text-shadow:2px 2px 0px black, 0px 0px 20px #CA2020, 0px 0px 20px #CA2020;
+    font-family: 'Playball', cursive;
+}
+
+#videoBox
+{
+    display:block;
+    position: relative;
+    z-index: 2;
+    margin:auto;
+    border:1px solid black;
+    background-color:#FBFFFE;
+    max-width: 1080px;
+    height:600px;
+    margin-top: -7vh;
+}
+
+#video
+{
+  width:100%;
+  height:100%;
+  object-fit: fill;
+}
+
+#horizontalBorder
+{
+  display:block;
+  margin:auto;
+  background-image: url(media/hLine.svg);
+  width:90%;
+  margin-left:5%;
+  height:1px;
+  margin-top:80px;
+  margin-bottom:80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#mainContentContentBox
+{
+  display:block;
+  width:100%;
+  height:200px;
+}
+
+#newsletterBox, #contactBox{
+  width:46%;
+  height:100%;
+  display:block;
+  float:left;
+  padding:10px;
+}
+
+#verticalBorder{
+  display:block;
+  float:left;
+  background-image: url(media/vLine.svg);
+  width:1px;
+  margin-left:1.5%;
+  margin-right:1.5%;
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#newsletterTitle
+{
+  display:block;
+  float: left;
+  color:#1B1B1E;
+  width:100%;
+  height:auto;
+  font-size:40px;
+  text-transform: capitalize;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#newsletterText
+{
+  display:block;
+  float: left;
+  color:#1B1B1E;
+  width:100%;
+  min-height:110px;
+  font-size:18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#newsletterForm
+{
+  height:100%;
+}
+
+#newsletterSubBox
+{
+  display:block;
+  float: left;
+  height:35px;
+  width:100%;
+
+}
+
+#emailInput
+{
+  display: block;
+  float: left;
+  width:58%;
+  height:70%;
+  margin:0;
+  padding:1%;
+  border:none;
+  background-color:#FBFFFE;
+  border-radius: 1px;
+  color:#1B1B1E;
+}
+
+#subBtn
+{
+  display:block;
+  float:left;
+  width:34%;
+  height:100%;
+  border:none;
+  margin:0;
+  padding:1%;
+  margin-left:5%;
+  font-size:16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 1px;
+  box-shadow: 3px 3px 6px black;
+  background-color:#FBFFFE;
+  color:#1B1B1E;
+  font-weight:400;
+  transition: .2s ease;
+}
+
+#subBtn:hover
+{
+  box-shadow: none;
+}
+
+.contactInfoBox
+{
+  display:block;
+  float:left;
+  width:100%;
+  height:26px;
+  margin-top:10px;
+}
+
+.firstContactBox{margin-top:0;}
+
+.contactImg
+{
+  width:20px;
+  height:20px;
+  margin-top:3px;
+  display: block;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+}
+
+.emailImg{background-image: url('media/email.svg');}
+.phoneImg{background-image: url('media/phone.svg');}
+
+.contactText
+{
+  display: block;
+  float: left;
+  margin-left:15px;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#footer
+{
+    display:block;
+    float:left;
+    width:100%;
+    height:115px;
+    background-color:#1B1B1E;
+}
+
+#copyRight
+{
+  color:#FBFFFE;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width:100%;
+  text-align: center;
+  margin-top:50px;
+  font-size:12px;
+}
+
+#showLater{display:none;}
+
+
+@media only screen and (max-width: 1150px) {
+  #videoBox
+  {
+    width:92vw;
+    height:52vw;
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  #logo
+  {
+    padding:10px;
+    max-width: 500px;
+    height: 150px;
+    background-size: 100%;
+  }
+
+  #mainContentTitle
+  {
+    font-size:min(40px, 8vw);
+  }
+
+  #TwoTitle{
+    font-size:42px;
+    
+  }
+
+  #showLater
+  {
+    display:block;
+  }  
+
+
+  .arrowDown
+  {
+    margin-top:200px;
+  }
+
+
+  #newsletterBox, #contactBox
+  {
+    width:94%;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+  #newsletterText, .contactText
+  {
+    font-size:15px
+  }
+
+
+  #verticalBorder
+  {
+    display:none;
+  }
+
+}

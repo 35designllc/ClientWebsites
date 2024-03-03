@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1513" height="227" viewBox="0 0 1513 227">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="WELCOME_TO_PRACTICAL_TACTICAL" x="200" y="72.279" width="1116.5" height="86.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="0.5" dy="0.5" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_2" x="911" y="7" width="169" height="220" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-color="#ff4343"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_2-2" x="971" y="67" width="50" height="101" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur-3"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_68" data-name="Group 68" transform="translate(8)">
+    <rect id="Rectangle_73" data-name="Rectangle 73" width="1513" height="220" transform="translate(-8)" fill="url(#linear-gradient)"/>
+    <g id="Group_5" data-name="Group 5" transform="translate(-431 -230.721)">
+      <text id="WELCOME_TO_THE_GUNHOUSE" data-name="WELCOME TO THE GUNHOUSE" transform="translate(625 375)" fill="#96031a" font-size="65" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0" xml:space="preserve">WELCOME TO PRACTICAL    TACTICAL</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 423, 230.72)" filter="url(#WELCOME_TO_PRACTICAL_TACTICAL)">
+        <text id="WELCOME_TO_PRACTICAL_TACTICAL-2" data-name="WELCOME TO PRACTICAL    TACTICAL" transform="translate(200 142.28)" fill="#faa916" font-size="65" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0" xml:space="preserve">WELCOME TO PRACTICAL    TACTICAL</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 423, 230.72)" filter="url(#_2)">
+        <text id="_2-3" data-name="2" transform="translate(971 143)" fill="#96031a" font-size="80" font-family="Playball-Regular, Playball"><tspan x="0" y="0">2</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 423, 230.72)" filter="url(#_2-2)">
+        <text id="_2-4" data-name="2" transform="translate(971 143)" fill="#96031a" font-size="80" font-family="Playball-Regular, Playball"><tspan x="0" y="0">2</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
