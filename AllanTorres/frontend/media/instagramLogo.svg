@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <filter id="Icon_metro-instagram" x="0" y="0" width="42" height="42" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#96031a"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_metro-instagram)">
+    <path id="Icon_metro-instagram-2" data-name="Icon metro-instagram" d="M32.594,1.928H8.547A5.994,5.994,0,0,0,2.571,7.9V31.951a5.994,5.994,0,0,0,5.977,5.977H32.594a5.994,5.994,0,0,0,5.977-5.977V7.9a5.994,5.994,0,0,0-5.977-5.977Zm-18.5,15.75H27.046a6.855,6.855,0,1,1-12.952,0Zm19.976,0v13.5a2.257,2.257,0,0,1-2.25,2.25H9.321a2.257,2.257,0,0,1-2.25-2.25v-13.5H10.59a10.23,10.23,0,1,0,19.961,0Zm0-7.877a1.128,1.128,0,0,1-1.125,1.125H30.7A1.128,1.128,0,0,1,29.571,9.8V7.553A1.128,1.128,0,0,1,30.7,6.428h2.25a1.128,1.128,0,0,1,1.125,1.125Z" transform="translate(2.43 -0.93)" fill="#faa916"/>
+  </g>
+</svg>
