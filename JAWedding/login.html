@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="JA.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon.svg">
+    <title>Jennifer & Andriy | Login</title>
+</head>
+<body>
+    <div class="cursor-fixed"></div>
+    <div class="cursor">
+    <div class="inside_cursor"></div>
+    </div>
+    <h1 class="splashHeading">Jennifer & Andriy 2024</h1>
+    <div class="loginBox">
+        <form name ="simple" onsubmit="return validateForm()" method="post">
+            <p class="mTitle">PASSWORD</p>
+            <input class="mInput" type="password" name="defNothingImportant">
+            <input class="mSub" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    function validateForm() {
+    var defNothingImportant = document.forms["simple"]["defNothingImportant"].value;
+    if (defNothingImportant == null || defNothingImportant == "") {
+        alert("Enter the secret phrase!");
+        return false;
+    }else if(defNothingImportant != "TheLibrary"){
+        alert("Secret phrase incorrect!");
+        return false;
+    }else if(defNothingImportant == "TheLibrary"){
+        var sessionTimeout = 1; //hours
+        var loginDuration = new Date();
+        loginDuration.setTime(loginDuration.getTime()+(sessionTimeout*60*60*1000));
+        document.cookie = 'CurrentSession=Valid; expires='+loginDuration.toGMTString()+';';
+        let x = document.cookie;
+        console.log(x);
+        location.href = "Index.html";
+        return false;
+    }
+}
+</script>
+<script>
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script>
+<script>
+
+    //not very safe protection plz dont make fun of
+    document.addEventListener('contextmenu',(e)=>{
+    e.preventDefault();
+    }
+    );
+    document.onkeydown = function(e) {
+    if(e.keyCode == 123) {
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+    return false;
+    }
+    }
+
+</script>

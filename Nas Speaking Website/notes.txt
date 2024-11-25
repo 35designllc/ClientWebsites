@@ -1,0 +1,32 @@
+
+Possibly re do the home page: ui/ux frontend
+https://www.brooklynsfinestcleaningservices.com/
+
+
+12/10/22
+
+transcendingnarratives.com
+
+Add picture to the testemonials under the 3 videos on home page. DONE
+on the mobile version topics of expertise is cut off and spelled wrong! DONE
+make the form work so that nas can get and email when someone submits his form. DONE
+remove the text under see nas in action on the gallery page. DONE
+fix the request availability on the gallary page DONE
+Check to see if i can make custom web page on wix DONE
+add a ssl sertificate to the website so that it dosent show "not secure" DONE
+upload changes to aws DONE
+
+change social media logos and links add youtube instead of fb DONE
+add bootstrap caroucel to the home page where there galary button is DONE
+move the request avaliability button to the bottom more on the home page DONE
+add test to the box videos. not doing
+
+
+
+
+
+when the engagements folder is ready update the site with the pictures and text
+
+
+
+

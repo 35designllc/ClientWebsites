@@ -1,0 +1,716 @@
+<script>
+   if (document.cookie.indexOf("CurrentSession=Valid") == -1) {
+      location.href = "login.html";
+   }
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Jennifer & Andriy | FAQ</title>
+   <link rel="stylesheet" href="JA.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="https://use.typekit.net/kqi7lak.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100;10..100,200;10..100,300;10..100,400;10..100,500;10..100,600;10..100,700;10..100,800;10..100,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="icon.svg">
+</head>
+   <body id="thewholebody">
+      <div id="grayCover"></div>
+      <div class="page-container">
+      <div id="top2">
+        <a href="Index.html">
+        <div id="logothing">
+          <p class="logosmaller"> J / A </p>
+        </div>
+        </a>
+        <div id="mySidenav" class="sidenavSmaller">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <!--<a href="#ourS">OUR STORY</a>
+           <a href="#pVid">PROPOSAL</a>-->
+           <a href="Index.html">HOME</a>
+           <a href="IndexGallery.html">GALLERY</a>
+           <a href="#wDet">DETAILS</a>
+           <a href="#registry">REGISTRY</a>
+           <a href="rsvp.html">RSVP</a>
+           <a href="FAQ.html">FAQ</a>
+           <a href="Timeline.html">TIMELINE</a>
+        </div>
+        <div id="sidebarbutton">
+           <span style="font-size:30px;" onclick="openNav()">&#9776;</span>
+        </div>
+     </div>
+   <div class="maxWidthContainer">
+      <div class="mainContainer">
+
+      <h5 class="weddingDetailsTitle">FAQ</h5>
+
+      <div class="FAQBox"> 
+         <div class="FAQ" onclick="open3(); close3()";> 
+             <div class="FAQHalf">
+                 <p class="FAQTitle">Wedding Day Information For Guests</p>
+             </div>
+             <div class="twoFAQHalf">
+                 <img id="FAQBtn3" class="FAQArrow" src="serviceArrow.svg">
+             </div>
+         </div>
+         <div class="FAQExpanded" id="FAQBlock3">
+             <div class ="FAQ3ClientHeight">
+                 <div class="FAQTextBox">
+                     <p class="FAQText" style="padding-bottom:0px;">
+                         <u>Timeline</u>
+                         <ul>
+                           <li>
+                              <p class="FAQText" style="padding-top:0px;">
+                              <u>1:30 PM</u> - Guest transport buses depart from the <u><a href="https://maps.app.goo.gl/dspyvtgXEQxKXpo97">Canopy</a></u>
+                              hotel to the <u><a href="https://maps.app.goo.gl/2ANnRGnbRvaS5hrB6">church</a></u>
+                              </p>
+                          </li>
+                           <li>
+                              <p class="FAQText" style="padding-top:0px;">
+                                 <u>2:00 PM - 2:15 PM</u> - Guests arrive at <u><a href="https://maps.app.goo.gl/2ANnRGnbRvaS5hrB6">Sts. Volodymyr & Olha Ukrainian Catholic Church</a></u>
+                              </p>
+                           </li>
+                           <li>
+                              <p class="FAQText" style="padding-top:0px;">
+                                 <u>2:30 PM</u> - Wedding ceremony begins.
+                              </p>
+                           </li>
+
+                           <li>
+                              <p class="FAQText" style="padding-top:0px;">
+                              <u>3:30 PM</u> - Wedding ceremony ends, buses take guests back to the <u><a href="https://maps.app.goo.gl/dspyvtgXEQxKXpo97">Canopy</a></u>
+                              hotel
+  
+                              <p class="FAQText" style="padding-top:0px; padding-bottom:0px; padding-left:9%;">
+                                  *<u>Note:</u> <u><a href="https://maps.app.goo.gl/f8uRmkT5AQmVyYaW6">Venue</a></u> is 1 block away from the <u><a href="https://maps.app.goo.gl/dspyvtgXEQxKXpo97">Canopy</a></u> hotel, there is no transportation between hotels and venue provided
+                              </p>
+                              </p>
+                          </li>
+
+                           <li>
+                              <p class="FAQText" style="padding-top:0px;">
+                                 <u>5:00 PM - 5:30 PM</u> - Guests make their way over to the <u><a href="https://maps.app.goo.gl/f8uRmkT5AQmVyYaW6">Venue</a></u>
+                              </p>
+                           </li>
+
+                           <li>
+                              <p class="FAQText" style="padding-top:0px;">
+                                 <u>5:30 PM - 6:30 PM</u> - Cocktail hour
+                              </p>
+                           </li>
+
+                           <li>
+                              <p class="FAQText" style="padding-top:0px;">
+                                 <u>6:30 PM - 10:30 PM</u> - Reception
+                              </p>
+                           </li>
+
+                           <p class="FAQText" style="padding-top:0px;">
+                              *<u>Note:</u> underlined locations link to goole maps, click on them for more information
+                          </p>
+                        </ul>
+                     </p>
+                 </div>
+             </div>
+         </div>
+         <div class="FAQBorder"></div>
+     </div>
+
+        <div class="FAQBox"> 
+        <div class="FAQ" onclick="open1(); close1()";> 
+            <div class="FAQHalf">
+                <p class="FAQTitle">What is the dress code?</p>
+            </div>
+            <div class="twoFAQHalf">
+                <img id="FAQBtn1" class="FAQArrow" src="serviceArrow.svg">
+            </div>
+        </div>
+        <div class="FAQExpanded" id="FAQBlock1">
+            <div class ="FAQ1ClientHeight">
+                <div class="FAQTextBox">
+                    <p class="FAQText">
+                        The dress code for the event is black-tie optional! Since we don't get to go to gala events,
+                        we thought we would throw our own! For the ladies, we ask that you wear black-tie optional attire such as a floor-length/midi-length dress,
+                        or dressy separates. For the men, dress to impress with a suit and tie. Please note that the venue does not permit blue jeans or sneakers.
+                        <br>
+                        <br>
+                        Both the ceremony and reception venue are indoors, however we encourage you to check on the weather ahead of time - Chicago can experience all four seasons in a day,
+                        so please pack accordingly!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="FAQBorder"></div>
+        </div>
+
+        <div class="FAQBox"> 
+            <div class="FAQ" onclick="open2(); close2()";> 
+                <div class="FAQHalf">
+                    <p class="FAQTitle">Can we bring a guest or kids?</p>
+                </div>
+                <div class="twoFAQHalf">
+                    <img id="FAQBtn2" class="FAQArrow" src="serviceArrow.svg">
+                </div>
+            </div>
+            <div class="FAQExpanded" id="FAQBlock2">
+                <div class ="FAQ2ClientHeight">
+                    <div class="FAQTextBox">
+                        <p class="FAQText">
+                            We want to accomodate as many people as possible, however due to space constraints,
+                            we cannot accommodate additonal plus ones or kids that were not indicated on your RSVP.
+                            We appreciate your understanding and look forward to celebrating with you!
+                    </div>
+                </div>
+            </div>
+            <div class="FAQBorder"></div>
+        </div>
+
+        <div class="FAQBox"> 
+            <div class="FAQ" onclick="open4(); close4()";> 
+                <div class="FAQHalf">
+                    <p class="FAQTitle">Registry</p>
+                </div>
+                <div class="twoFAQHalf">
+                    <img id="FAQBtn4" class="FAQArrow" src="serviceArrow.svg">
+                </div>
+            </div>
+            <div class="FAQExpanded" id="FAQBlock4">
+                <div class ="FAQ4ClientHeight">
+                    <div class="FAQTextBox">
+                        <p class="FAQText">
+                            Your presence at our wedding is the greatest gift we could ask for!
+                            If you would like to honor us with a gift, we have registered a list with Crate & Barrel and Amazon, linked below.
+                    </div>
+                </div>
+            </div>
+            <div class="FAQBorder"></div>
+        </div>
+
+        <div class="FAQBox"> 
+            <div class="FAQ" onclick="open5(); close5()";> 
+                <div class="FAQHalf">
+                    <p class="FAQTitle">Transportation</p>
+                </div>
+                <div class="twoFAQHalf">
+                    <img id="FAQBtn5" class="FAQArrow" src="serviceArrow.svg">
+                </div>
+            </div>
+            <div class="FAQExpanded" id="FAQBlock5">
+                <div class ="FAQ5ClientHeight">
+                    <div class="FAQTextBox">
+                        <p class="FAQText">
+                            Complimentary shuttle services will be provided to and from the church before and after the wedding ceremony.
+                            The reception venue is within walking distance 1 block from the hotel.
+                    </div>
+                </div>
+            </div>
+            <div class="FAQBorder"></div>
+        </div>
+
+        <div class="FAQBox"> 
+            <div class="FAQ" onclick="open6(); close6()";> 
+                <div class="FAQHalf">
+                    <p class="FAQTitle">Accomodation</p>
+                </div>
+                <div class="twoFAQHalf">
+                    <img id="FAQBtn6" class="FAQArrow" src="serviceArrow.svg">
+                </div>
+            </div>
+            <div class="FAQExpanded" id="FAQBlock6">
+                <div class ="FAQ6ClientHeight">
+                    <div class="FAQTextBox">
+                        <p class="FAQText">
+                            We have room blocks set up at two different hotels and encourage you to take advantage of our group rate.
+                            A reservation can be made under the Young-Bench Wedding group. The two hotels are next door to each other,
+                            both within walking distance from the reception venue. You can make a reservation online, however some folks have found it easier to call and reserve.
+                            <br>
+                            <br>
+                            Please have accommodations booked by September 1. If there are any issues with the room block reservation,
+                            please reach out and let us know so we can expand the hotel block!
+                            
+                            <br>
+                            <br>
+                            <a style="text-decoration:underline;" href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=CHIJBPY&groupCode=YB5&arrivaldate=2024-10-09&departuredate=2024-10-13&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">
+                                Canopy - Chicago Central Loop Booking Link
+                            </a> 
+                            <br>
+                            <br>
+                            <a style="text-decoration:underline;" href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=CHIWJGI&groupCode=YB5&arrivaldate=2024-10-10&departuredate=2024-10-13&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">
+                                Hilton Garden Inn - Chicago Central Loop Booking Link
+                            </a> 
+                            <br>
+                            <br>
+                            Guests can also call 1-800-HILTONS and reference the room block name over those dates.
+                            The cutoff date for your room blocks is Wednesday, September 11 at 11:59pm.
+                            At that time, any rooms not booked will go back into our general hotel inventory and we can no longer guarantee availability or the block rate.
+                    </div>
+                </div>
+            </div>
+            <div class="FAQBorder"></div>
+        </div>
+
+          <h5 id="registry" class="weddingDetailsTitle">Registries</h5>
+          <div class="weddingDetailsBox">
+             <div class="wddingDetailsRow1">
+                <div class="weddingDetail1Box">
+                   <div class="weddingDetail1">
+                      <p class="weddingTitle">CRATE & BARREL</p>
+                      <p class="weddingTitleSmaller">registry</p>
+                      <h4 class="weddingContent">
+                         <a href="https://www.crateandbarrel.com/gift-registry/jennifer-young-and-andriy-bench/r7096684">
+                            Jennifer &<br>
+                            Andriy
+                         </a>
+                         <a class="weddingLink" href="https://www.crateandbarrel.com/gift-registry/jennifer-young-and-andriy-bench/r7096684">Browse registry</a>
+                      </h4>
+                   </div> 
+                </div> 
+                <div class="weddingDetail1Box">
+                   <div class="weddingDetail1">
+                      <p class="weddingTitle">AMAZON</p>
+                      <p class="weddingTitleSmaller">registry</p>
+                      <h4 class="weddingContent">
+                         <a href="https://www.amazon.com/wedding/registry/27MZSIWW7PA0M?ref=wr_search_page_result_1">
+                            Jennifer &<br>
+                            Andriy
+                         </a>
+                         <a class="weddingLink" href="https://www.amazon.com/wedding/registry/27MZSIWW7PA0M?ref=wr_search_page_result_1">Browse registry</a>
+                      </h4>
+                   </div> 
+                </div> 
+             </div> 
+          </div>
+          <div class="endContainer" id="wDet">
+            <h1 class="locationTitle">Chicago, IL</h1>
+            <h5 class="weddingDetailsTitle">Wedding Details</h5>
+            <div class="weddingDetailsBox">
+               <div class="wddingDetailsRow1">
+                  <div class="weddingDetail1Box">
+                     <div class="weddingDetail1">
+                        <p class="weddingTitle">VENUES</p>
+                        <p class="weddingTitleSmaller">CEREMONY</p>
+                        <h4 class="weddingContent">
+                           <a href="https://maps.app.goo.gl/ZVMJFrLreNEoYcXd9">
+                              Saints <br>
+                              Volodymyr & Olha <br>
+                              Ukrainian Catholic Church.
+                           </a>
+                        </h4>
+                        <p class="weddingTitleSmaller">RECEPTION</p>
+                        <h4 class="weddingContent">
+                           <a href="https://maps.app.goo.gl/xKusw3ksgVzQAFdv9">
+                              The Library, <br>
+                              At 190 S <br>
+                              La Salle St.
+                           </a>
+                        </h4>
+                     </div> 
+                  </div> 
+                  <div class="weddingDetail1Box">
+                     <div class="weddingDetail1">
+                        <p class="weddingTitle">AIRPORTS</p>
+                        <h4 class="weddingContent">
+                           O'Hare <br>
+                           International <br> 
+                           Airport.
+                        </h4>
+                     </div> 
+                  </div> 
+                  <div class="weddingDetail1Box">
+                     <div class="weddingDetail1">
+                         <p class="weddingTitle">LODGING</p>
+                         <p class="weddingTitleSmaller">HOTEL</p>                                
+                         <a href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=CHIJBPY&groupCode=YB5&arrivaldate=2024-10-09&departuredate=2024-10-13&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">
+                             <h4 class="weddingContent">
+                             Canopy by Hilton<br>
+                             Chicago Central<br>
+                             Loop
+                             </h4>
+                             <a class="weddingLink" href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=CHIJBPY&groupCode=YB5&arrivaldate=2024-10-09&departuredate=2024-10-13&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">Book A Room</a>
+                         </a>
+                         <br>
+                         <p class="weddingTitleSmaller">HOTEL</p>
+                         <a href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=CHIWJGI&groupCode=YB5&arrivaldate=2024-10-10&departuredate=2024-10-13&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">
+                             <h4 class="weddingContent">
+                             Hilton Garden Inn<br>
+                             Chicago Central<br> 
+                             Loop
+                             </h4>
+                             <a class="weddingLink" href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=CHIWJGI&groupCode=YB5&arrivaldate=2024-10-10&departuredate=2024-10-13&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">Book A Room</a>
+                         </a>
+                     </div>
+                 </div>
+               </div>
+               <h5 class="weddingDetailsTitle">While In Town...</h5>
+               <div class="wddingDetailsRow2">
+                  <div class="weddingDetail2Box">
+                     <div class="weddingDetail2">
+                        <p class="weddingTitleSmaller">MUSEUM</p>
+                        <a href="https://www.google.com/maps/place/Shedd+Aquarium/@41.8675726,-87.6166129,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2b635fb775f9:0x32059de3df50fbdf!8m2!3d41.8675726!4d-87.614038!16zL20vMDJqdzB6?entry=ttu">
+                           <h4 class="weddingContent">
+                              The Shedd <br>
+                              Aquarium
+                           </h4>
+                           <a href="https://www.google.com/maps/place/Shedd+Aquarium/@41.8675726,-87.6166129,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2b635fb775f9:0x32059de3df50fbdf!8m2!3d41.8675726!4d-87.614038!16zL20vMDJqdzB6?entry=ttu" class="weddingLink">Cool Fish</a>
+                        </a>
+                        <br>
+                        <p class="weddingTitleSmaller">SKYSCRAPER</p>
+                        <a href="https://www.google.com/maps/place/Willis+Tower/@41.878564,-87.6384832,17z/data=!3m1!5s0x880e2cb9ef33ea47:0x488801c0e065a0e!4m10!1m2!2m1!1sSears+Tower!3m6!1s0x880e2cbee269fbbb:0x10f6dce5eb88c7d!8m2!3d41.8788764!4d-87.6359149!15sCgtTZWFycyBUb3dlcloNIgtzZWFycyB0b3dlcpIBEnRvdXJpc3RfYXR0cmFjdGlvbpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSd09VNTFibnBuUlJBQuABAA!16zL20vMDZfN2s?entry=ttu">
+                           <h4 class="weddingContent">
+                              Sears Tower
+                           </h4>
+                           <a href="https://www.google.com/maps/place/Willis+Tower/@41.878564,-87.6384832,17z/data=!3m1!5s0x880e2cb9ef33ea47:0x488801c0e065a0e!4m10!1m2!2m1!1sSears+Tower!3m6!1s0x880e2cbee269fbbb:0x10f6dce5eb88c7d!8m2!3d41.8788764!4d-87.6359149!15sCgtTZWFycyBUb3dlcloNIgtzZWFycyB0b3dlcpIBEnRvdXJpc3RfYXR0cmFjdGlvbpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VSd09VNTFibnBuUlJBQuABAA!16zL20vMDZfN2s?entry=ttu" class="weddingLink">Sky Deck</a>
+                        </a>
+                        <br>
+                        <p class="weddingTitleSmaller">MUSEUM</p>
+                        <a href="https://www.google.com/maps/place/Field+Museum/@41.8662649,-87.6218514,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2b7d33304057:0xb51220475f7ec7da!8m2!3d41.866261!4d-87.6169805!16zL20vMDIxY3pj?entry=ttu">
+                           <h4 class="weddingContent">
+                              The Field <br>
+                              Museum
+                           </h4>
+                           <a href="https://www.google.com/maps/place/Field+Museum/@41.8662649,-87.6218514,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2b7d33304057:0xb51220475f7ec7da!8m2!3d41.866261!4d-87.6169805!16zL20vMDIxY3pj?entry=ttu" class="weddingLink">Dinosaurs</a>
+                        </a>
+                        <br>
+                        <p class="weddingTitleSmaller">CHICAGO RIVER</p>
+                        <a href="https://www.google.com/maps/search/river+walk/@41.8812623,-87.6283645,15.75z?entry=ttu">
+                           <h4 class="weddingContent">
+                              River Walk
+                           </h4>
+                           <a href="https://www.google.com/maps/search/river+walk/@41.8812623,-87.6283645,15.75z?entry=ttu" class="weddingLink">Nice Walk!</a>
+                        </a>
+                        <br>
+                     </div> 
+                  </div> 
+                  <div class="weddingDetail2Box">
+                     <div class="weddingDetail2">
+                        <p class="weddingTitleSmaller">MUSEUM</p>
+                        <a href="https://www.google.com/maps/place/Adler+Planetarium/@41.8664105,-87.6116607,17z/data=!3m2!4b1!5s0x880e2b6fb648a39f:0xd66a433b11995a78!4m6!3m5!1s0x880e2b6fb7b114b5:0x6920a3aa12218ea6!8m2!3d41.8664066!4d-87.6067898!16zL20vMDFkbHpj?entry=ttu">
+                           <h4 class="weddingContent">
+                              The Adler <br>
+                              Planetarium
+                           </h4>
+                           <a href="https://www.google.com/maps/place/Adler+Planetarium/@41.8664105,-87.6116607,17z/data=!3m2!4b1!5s0x880e2b6fb648a39f:0xd66a433b11995a78!4m6!3m5!1s0x880e2b6fb7b114b5:0x6920a3aa12218ea6!8m2!3d41.8664066!4d-87.6067898!16zL20vMDFkbHpj?entry=ttu" class="weddingLink">Sky Line & Stars!</a>
+                        </a>
+                        <br>
+                        <p class="weddingTitleSmaller">SKYSCRAPER</p>
+                        <a href="https://www.google.com/maps/place/875+North+Michigan+Avenue/@41.8987738,-87.6277877,17z/data=!3m2!4b1!5s0x880fd35472d9d60b:0x5eb480cad1c9aa50!4m6!3m5!1s0x880fd3541290b235:0x685dc775d28292d0!8m2!3d41.8987699!4d-87.6229168!16zL20vMGIyOHo?entry=ttu">
+                           <h4 class="weddingContent">
+                              John Hancock <br>
+                              Center
+                           </h4>
+                           <a href="https://www.google.com/maps/place/875+North+Michigan+Avenue/@41.8987738,-87.6277877,17z/data=!3m2!4b1!5s0x880fd35472d9d60b:0x5eb480cad1c9aa50!4m6!3m5!1s0x880fd3541290b235:0x685dc775d28292d0!8m2!3d41.8987699!4d-87.6229168!16zL20vMGIyOHo?entry=ttu" class="weddingLink">Signature Room</a>
+                        </a>
+                        <br>
+                        <p class="weddingTitleSmaller">THE BEAN</p>
+                        <a href="https://www.google.com/maps/place/Millennium+Park/@41.8825564,-87.6251263,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2ca68a4f9c03:0x44182cdcb5a91004!8m2!3d41.8825524!4d-87.6225514!16zL20vMDNkXzdy?entry=ttu">
+                           <h4 class="weddingContent">
+                              Millenium Park
+                           </h4>
+                           <a href="https://www.google.com/maps/place/Millennium+Park/@41.8825564,-87.6251263,17z/data=!3m1!4b1!4m6!3m5!1s0x880e2ca68a4f9c03:0x44182cdcb5a91004!8m2!3d41.8825524!4d-87.6225514!16zL20vMDNkXzdy?entry=ttu" class="weddingLink">Bean</a>
+                        </a>
+                        <br>
+                        <p class="weddingTitleSmaller">PIER</p>
+                        <a href="https://www.google.com/maps/place/Navy+Pier/@41.8918673,-87.6076693,17z/data=!3m2!4b1!5s0x880e2b4ba5b33581:0x1fc721b72d7b73c4!4m6!3m5!1s0x880e2b4d91f12edb:0xd0acdb96b088a4dc!8m2!3d41.8918633!4d-87.6050944!16zL20vMGM3bG4?entry=ttu">
+                           <h4 class="weddingContent">
+                              Navy Pier
+                           </h4>
+                           <a href="https://www.google.com/maps/place/Navy+Pier/@41.8918673,-87.6076693,17z/data=!3m2!4b1!5s0x880e2b4ba5b33581:0x1fc721b72d7b73c4!4m6!3m5!1s0x880e2b4d91f12edb:0xd0acdb96b088a4dc!8m2!3d41.8918633!4d-87.6050944!16zL20vMGM3bG4?entry=ttu" class="weddingLink">Ferris Wheel</a>
+                        </a>
+                        <br>
+                     </div> 
+                  </div>  
+               </div> 
+               <h5 class="weddingDetailsTitle">Our Favorite Restaurants!</h5>
+               <div class="wddingDetailsRow2">
+               <div class="weddingDetail2Box">
+                  <div class="weddingDetail2">
+                     <p class="weddingTitleSmaller">CUBAN</p>
+                     <a href="https://maps.app.goo.gl/ykSnLz6tfi6B3zkF9">
+                        <h4 class="weddingContent">
+                           Havana Grill
+                        </h4>
+                        <a href="https://maps.app.goo.gl/ykSnLz6tfi6B3zkF9" class="weddingLink">Get The Mojitos!</a>
+                     </a>
+                     <br>
+                     <p class="weddingTitleSmaller">SEA FOOD</p>
+                     <a href="https://www.google.com/maps/place/Union+Sushi+%2B+Barbeque+Bar/@41.889659,-87.6338481,17z/data=!4m6!3m5!1s0x880e2cb4e653f475:0xae20d133e39ba952!8m2!3d41.8940748!4d-87.6354286!16s%2Fg%2F1whdjylv?entry=ttu">
+                        <h4 class="weddingContent">
+                           Union Sushi + <br>
+                           Barbecue Bar
+                        </h4>
+                        <a href="https://www.google.com/maps/place/Union+Sushi+%2B+Barbeque+Bar/@41.889659,-87.6338481,17z/data=!4m6!3m5!1s0x880e2cb4e653f475:0xae20d133e39ba952!8m2!3d41.8940748!4d-87.6354286!16s%2Fg%2F1whdjylv?entry=ttu" class="weddingLink">Sake Bombs</a>
+                     </a>
+                     <br>
+                     <p class="weddingTitleSmaller">AMERICAN</p>
+                     <a href="https://www.google.com/maps/place/Piece+Brewery/@41.9103082,-87.6787038,17z/data=!3m1!4b1!4m6!3m5!1s0x880fd2c73a89697d:0x4cd7101ee1c2c354!8m2!3d41.9103042!4d-87.6761289!16s%2Fg%2F1tdr8sr_?entry=ttu">
+                        <h4 class="weddingContent">
+                           Piece Brewing
+                        </h4>
+                        <a href="https://www.google.com/maps/place/Piece+Brewery/@41.9103082,-87.6787038,17z/data=!3m1!4b1!4m6!3m5!1s0x880fd2c73a89697d:0x4cd7101ee1c2c354!8m2!3d41.9103042!4d-87.6761289!16s%2Fg%2F1tdr8sr_?entry=ttu" class="weddingLink">Pizza and Beer</a>
+                     </a>
+                     <br>
+                     <p class="weddingTitleSmaller">AMERICAN</p>
+                     <a href="https://maps.app.goo.gl/sPKAFr1Hnw1d3ZEq7">
+                        <h4 class="weddingContent">
+                           Giordano's  
+                        </h4>
+                        <a href="https://maps.app.goo.gl/sPKAFr1Hnw1d3ZEq7" class="weddingLink">Deep Dish!</a>
+                     </a>
+                     <br>
+                  </div> 
+               </div> 
+               <div class="weddingDetail2Box">
+                  <div class="weddingDetail2">
+                     <p class="weddingTitleSmaller">AMERICAN</p>
+                     <a href="https://maps.app.goo.gl/6YqZrgxbWd8rCBG3A">
+                        <h4 class="weddingContent">
+                           Portillo's
+                        </h4>
+                        <a href="https://maps.app.goo.gl/6YqZrgxbWd8rCBG3A" class="weddingLink">Cake Shake!</a>
+                     </a>
+                     <br>
+                     <p class="weddingTitleSmaller">BAR</p>
+                     <a href="https://maps.app.goo.gl/cLFm5WfLWdws3z2A7">
+                        <h4 class="weddingContent">
+                           Federales Chicago
+                        </h4>
+                        <a href="https://maps.app.goo.gl/cLFm5WfLWdws3z2A7" class="weddingLink">21+ Recomended</a>
+                     </a>
+                     <br>
+                     <p class="weddingTitleSmaller">ROOFTOP BAR</p>
+                     <a href="https://maps.app.goo.gl/3DqRKaUW3p9Jp6UV8">
+                        <h4 class="weddingContent">
+                           Cindy's Rooftop
+                        </h4>
+                        <a href="https://maps.app.goo.gl/3DqRKaUW3p9Jp6UV8" class="weddingLink">Great Views!</a>
+                     </a>
+                     <br>
+                     <p class="weddingTitleSmaller">SEA FOOD</p>
+                     <a href="https://maps.app.goo.gl/ZKybfyoRKW923iUM9">
+                        <h4 class="weddingContent">
+                           Shaw's <br>
+                           Crab House  
+                        </h4>
+                        <a href="https://maps.app.goo.gl/ZKybfyoRKW923iUM9" class="weddingLink">Oysters</a>
+                     </a>
+                     <br>
+                  </div> 
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
+      <div class="sideDate">
+         <div class="dateBox">
+            <p class="logoTxt firstLogoTxt">09</p>
+            <p class="logoTxt">/</p>
+            <p class="logoTxt">22</p>
+         </div>
+      </div>
+   </div>
+   <div class="endContainerMask"></div>
+    </div>
+      <div id="myModal" class="modal">
+         <span class="close colorclose">&times;</span>
+         <img class="modal-content" id="img01">
+      </div>
+</body>
+</html>
+<script>
+// handle the cool cursor
+const $cursor = document.querySelector('.cursor')
+const $insideCursor = document.querySelector('.inside_cursor')
+const $body = document.querySelector('body')
+let radius = 40
+let cursorX = 0
+let cursorY = 0
+const event = 0
+
+const mouse = { x: 0, y: 0 }
+
+document.addEventListener('mousemove', (event) => {
+    mouse.x = event.clientX - 15
+    mouse.y = event.clientY - 15
+
+})
+
+// cool cursor 2
+const $cursorPoint = document.querySelector('.cursor-fixed')
+let cursorPointX = 0
+let cursorPointY = 0
+
+let mousePointX = 0;
+let mousePointY = 0;
+
+const loop = (event) => {
+    window.requestAnimationFrame(loop)
+
+    const newCursorX = cursorX + (mouse.x - cursorX) * 0.1
+    const newCursorY = Math.floor(cursorY + (mouse.y - cursorY) * 0.1 + (window.scrollY / 10))
+
+    const distanceX = newCursorX - cursorX
+    const distanceY = newCursorY - cursorY
+
+    cursorX = newCursorX
+    cursorY = newCursorY
+
+    const scale = .9 + Math.hypot(distanceX, distanceY) / 20
+
+    $cursor.style.transform = `translateX(${cursorX}px) translateY(${cursorY}px) scale(${scale})`
+
+    // fixed
+
+    mousePointX = mouse.x + 10
+    mousePointY = mouse.y + 10 + window.scrollY
+    $cursorPoint.style.transform = `translateX(${mousePointX}px) translateY(${mousePointY}px)`
+
+}
+//loop()
+</script>
+<script>
+   // create references to the modal...
+   var modal = document.getElementById('myModal');
+   // to all images -- note I'm using a class!
+   var images = document.getElementsByClassName('grid-img');
+   // the image in the modal
+   var modalImg = document.getElementById("img01");
+   
+   // Go through all of the images with our custom class
+   for (var i = 0; i < images.length; i++) {
+     var img = images[i];
+     // and attach our click listener for this image.
+     img.onclick = function(evt) {
+       modal.style.display = "flex";
+
+       modalImg.src = this.src;
+     }
+   }
+   
+   
+   var span = document.getElementsByClassName("close")[0];
+   
+   span.onclick = function() {
+     modal.style.display = "none";
+
+   }
+   
+</script>
+
+<script>
+   function openNav() {
+     document.getElementById("mySidenav").style.width = "250px";
+     document.getElementById("thewholebody").style.marginLeft = "-250px";
+     document.getElementById("sidebarbutton").style.display = "none";
+     document.getElementById("grayCover").style.opacity = ".5";
+	 document.getElementById("grayCover").style.zIndex = "4";
+   }
+   
+   
+   function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+     document.getElementById("thewholebody").style.marginLeft= "0";
+     document.getElementById("sidebarbutton").style.display = "block"
+     document.getElementById("grayCover").style.opacity = "0";
+	 document.getElementById("grayCover").style.zIndex = "0";
+   }
+</script>
+
+<script>
+    //FAQ1
+   function open1() {
+        var FAQDiv = document.getElementById('FAQBlock1');
+        var wrapper = document.querySelector('.FAQ1ClientHeight');
+        FAQDiv.style.height = wrapper.clientHeight + "px";
+        console.log(wrapper.clientHeight);
+        document.getElementById("FAQBtn1").style.transform = "rotate(-180deg)";
+   };
+   function close1() {
+       var FAQDiv = document.getElementById('FAQBlock1');
+       if (FAQDiv.clientHeight) {
+           FAQDiv.style.height = 0;
+           document.getElementById("FAQBtn1").style.transform = "rotate(0deg)";
+       }
+   };
+
+    //FAQ2
+    function open2() {
+        var FAQDiv = document.getElementById('FAQBlock2');
+        var wrapper = document.querySelector('.FAQ2ClientHeight');
+        FAQDiv.style.height = wrapper.clientHeight + "px";
+        console.log(wrapper.clientHeight);
+        document.getElementById("FAQBtn2").style.transform = "rotate(-180deg)";
+   };
+   function close2() {
+       var FAQDiv = document.getElementById('FAQBlock2');
+       if (FAQDiv.clientHeight) {
+           FAQDiv.style.height = 0;
+           document.getElementById("FAQBtn2").style.transform = "rotate(0deg)";
+       }
+   };
+
+    //FAQ3
+    function open3() {
+        var FAQDiv = document.getElementById('FAQBlock3');
+        var wrapper = document.querySelector('.FAQ3ClientHeight');
+        FAQDiv.style.height = wrapper.clientHeight + "px";
+        console.log(wrapper.clientHeight);
+        document.getElementById("FAQBtn3").style.transform = "rotate(-180deg)";
+   };
+   function close3() {
+       var FAQDiv = document.getElementById('FAQBlock3');
+       if (FAQDiv.clientHeight) {
+           FAQDiv.style.height = 0;
+           document.getElementById("FAQBtn3").style.transform = "rotate(0deg)";
+       }
+   };
+
+    //FAQ4
+    function open4() {
+        var FAQDiv = document.getElementById('FAQBlock4');
+        var wrapper = document.querySelector('.FAQ4ClientHeight');
+        FAQDiv.style.height = wrapper.clientHeight + "px";
+        console.log(wrapper.clientHeight);
+        document.getElementById("FAQBtn4").style.transform = "rotate(-180deg)";
+   };
+   function close4() {
+       var FAQDiv = document.getElementById('FAQBlock4');
+       if (FAQDiv.clientHeight) {
+           FAQDiv.style.height = 0;
+           document.getElementById("FAQBtn4").style.transform = "rotate(0deg)";
+       }
+   };
+
+    //FAQ5
+    function open5() {
+        var FAQDiv = document.getElementById('FAQBlock5');
+        var wrapper = document.querySelector('.FAQ5ClientHeight');
+        FAQDiv.style.height = wrapper.clientHeight + "px";
+        console.log(wrapper.clientHeight);
+        document.getElementById("FAQBtn5").style.transform = "rotate(-180deg)";
+   };
+   function close5() {
+       var FAQDiv = document.getElementById('FAQBlock5');
+       if (FAQDiv.clientHeight) {
+           FAQDiv.style.height = 0;
+           document.getElementById("FAQBtn5").style.transform = "rotate(0deg)";
+       }
+   };
+
+    //FAQ6
+    function open6() {
+        var FAQDiv = document.getElementById('FAQBlock6');
+        var wrapper = document.querySelector('.FAQ6ClientHeight');
+        FAQDiv.style.height = wrapper.clientHeight + "px";
+        console.log(wrapper.clientHeight);
+        document.getElementById("FAQBtn6").style.transform = "rotate(-180deg)";
+   };
+   function close6() {
+       var FAQDiv = document.getElementById('FAQBlock6');
+       if (FAQDiv.clientHeight) {
+           FAQDiv.style.height = 0;
+           document.getElementById("FAQBtn6").style.transform = "rotate(0deg)";
+       }
+   };
+</script>

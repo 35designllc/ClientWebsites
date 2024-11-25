@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <link rel="stylesheet" href="JA.css">
+   <link rel="stylesheet" href="https://use.typekit.net/kqi7lak.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100;10..100,200;10..100,300;10..100,400;10..100,500;10..100,600;10..100,700;10..100,800;10..100,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+</head>
+   <body id="thewholebody">
+      <div class="cursor-fixed"></div>
+      <div class="cursor">
+         <div class="inside_cursor"></div>
+      </div>
+      <div id="grayCover"></div>
+      <div id="top2">
+         <a href="BasicWedding.html">
+         <div id="logothing">
+           <p class="logosmaller"> A / J </p>
+         </div>
+         </a>
+         <div id="mySidenav" class="sidenavSmaller">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="BasicPhotography.html">OUR STORY</a>
+            <a href="BasicGallery.html">PROPOSAL</a>
+            <a href="BasicGallery.html">GALLERY</a>
+            <a href="BasicGallery.html">DETAILS</a>
+            <a href="BasicGallery.html">REGISTRY</a>
+            <a href="BasicGallery.html">RSVP</a>
+         </div>
+         <div id="sidebarbutton">
+            <span style="font-size:30px;" onclick="openNav()">&#9776;</span>
+         </div>
+      </div>
+   <div class="maxWidthContainer">
+      <div class="mainContainer shorter">
+         <div class="grid-container">
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+           <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+            <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+            <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+            <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+            <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+            <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+            <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+            <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+            <div class="grid-item">
+            <img class="grid-img" src="PicOne1.png">
+           </div>
+         </div>
+      </div>
+      <div class="sideDate">
+         <div class="dateBox">
+            <p class="logoTxt firstLogoTxt">09</p>
+            <p class="logoTxt">/</p>
+            <p class="logoTxt">22</p>
+         </div>
+      </div>
+   </div>
+      <div id="myModal" class="modal">
+         <span class="close colorclose">&times;</span>
+         <img class="modal-content" id="img01">
+      </div>
+</body>
+</html>
+<script>
+// handle the cool cursor
+const $cursor = document.querySelector('.cursor')
+const $insideCursor = document.querySelector('.inside_cursor')
+const $body = document.querySelector('body')
+let radius = 40
+let cursorX = 0
+let cursorY = 0
+const event = 0
+
+const mouse = { x: 0, y: 0 }
+
+document.addEventListener('mousemove', (event) => {
+    mouse.x = event.clientX - 15
+    mouse.y = event.clientY - 15
+
+})
+
+// cool cursor 2
+const $cursorPoint = document.querySelector('.cursor-fixed')
+let cursorPointX = 0
+let cursorPointY = 0
+
+let mousePointX = 0;
+let mousePointY = 0;
+
+const loop = (event) => {
+    window.requestAnimationFrame(loop)
+
+    const newCursorX = cursorX + (mouse.x - cursorX) * 0.1
+    const newCursorY = Math.floor(cursorY + (mouse.y - cursorY) * 0.1 + (window.scrollY / 10))
+
+    const distanceX = newCursorX - cursorX
+    const distanceY = newCursorY - cursorY
+
+    cursorX = newCursorX
+    cursorY = newCursorY
+
+    const scale = .9 + Math.hypot(distanceX, distanceY) / 20
+
+    $cursor.style.transform = `translateX(${cursorX}px) translateY(${cursorY}px) scale(${scale})`
+
+    // fixed
+
+    mousePointX = mouse.x + 10
+    mousePointY = mouse.y + 10 + window.scrollY
+    $cursorPoint.style.transform = `translateX(${mousePointX}px) translateY(${mousePointY}px)`
+
+}
+loop()
+</script>
+<script>
+   // create references to the modal...
+   var modal = document.getElementById('myModal');
+   // to all images -- note I'm using a class!
+   var images = document.getElementsByClassName('grid-img');
+   // the image in the modal
+   var modalImg = document.getElementById("img01");
+   
+   // Go through all of the images with our custom class
+   for (var i = 0; i < images.length; i++) {
+     var img = images[i];
+     // and attach our click listener for this image.
+     img.onclick = function(evt) {
+       modal.style.display = "flex";
+
+       modalImg.src = this.src;
+     }
+   }
+   
+   
+   var span = document.getElementsByClassName("close")[0];
+   
+   span.onclick = function() {
+     modal.style.display = "none";
+
+   }
+   
+</script>
+
+<script>
+   function openNav() {
+     document.getElementById("mySidenav").style.width = "250px";
+     document.getElementById("thewholebody").style.marginLeft = "-250px";
+     document.getElementById("sidebarbutton").style.display = "none";
+     document.getElementById("grayCover").style.opacity = ".5";
+	 document.getElementById("grayCover").style.zIndex = "4";
+   }
+   
+   
+   function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+     document.getElementById("thewholebody").style.marginLeft= "0";
+     document.getElementById("sidebarbutton").style.display = "block"
+     document.getElementById("grayCover").style.opacity = "0";
+	 document.getElementById("grayCover").style.zIndex = "0";
+   }
+</script>

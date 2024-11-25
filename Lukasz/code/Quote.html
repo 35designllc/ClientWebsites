@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="SHORTCUT ICON" href="media/HandLogoTab.png" type="image/x-icon" />
+    <link rel="ICON" href="media/HandLogoTab.png" type="image/ico" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+</head>
+<body id="thewholebody" class="yellow">
+
+    <div id="grayCover"></div>
+
+    <!--top navigation-->
+    <div id="stickyBanner">
+        <a href="index.html"><div id="stickyBannerLogoBox"></div></a>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Quote.html">Quote</a>
+            <a href="https://landfreightforwardingcarriers.rmissecure.com/"><div style="display:inline-block; color:#FFD131">Carrier</div></a>
+        </div>
+        <div id="menuBox" onclick="openNav()"></div>
+    </div>
+    <!--end: top navigation-->
+
+    <!--body container-->
+    <div class="mainContainer quoteContainer">
+                <!--end: empolyee section-->
+
+                <div class="section quote">
+                    <div class="contentContainer contactContainer">
+                        <h1 id="quoteTitle">Get Started</h1>
+                        <!--form-->
+                        <div class="formBox">
+                            <form id="form" name="Quote-Form" autocomplete="off">
+                                <div id="formTitle">request freight quote</div>
+                                <div id="leftFormBox">
+                                    <input class="formInput" type="text" name="First_Name" placeholder="First Name" required />
+                                </div>
+                                <div id="rightFormBox">
+                                    <input class="formInput right" type="text" name="Last_Name" placeholder="Last Name" required  />
+                                </div>
+                                <div id="longFormBox">
+                                    <input class="long" type="text" name="Company" placeholder="Company" required/>
+                                    <input class="long" type="text" name="Email" placeholder="Email" required />
+                                    <input class="long" type="text" name="Phone" placeholder="Phone Number" required />
+                                    <input class="long" type="text" name="Street" placeholder="Street Address" />
+                                </div>
+                                <div id="leftFormBox">
+                                    <input class="formInput" type="text" name="State" placeholder="State" />
+                                </div>
+                                <div id="rightFormBox">
+                                    <input class="formInput right" type="text" name="Zip" placeholder="Zip Code" />
+                                </div>
+                                <div id="longFormBox">
+                                    <select class="long selectInput" name="Shipment_Type" required>
+                                        <option value="" selected disabled hidden>Shipment Type</option>
+                                        <option value="LTL">LTL</option>
+                                        <option value="Reefer">Reefer</option>
+                                        <option value="Dry Van">Dry Van</option>
+                                        <option value="Flatbed">Flatbed</option>
+                                    </select>
+                                </div>
+                                <div id="leftFormBox">
+                                    <input class="formInput" type="text" name="Origin" placeholder="Origin City" required/>
+                                </div>
+                                <div id="rightFormBox">
+                                    <input class="formInput right" type="text" name="Destination" placeholder="Destination City" required/>
+                                </div>
+                                <textarea id="formTextarea" placeholder="Shipment Details" name="Shipment_Details" required></textarea>
+                                <input id="sendBtn" type="submit" value="submit" />
+                            </form>
+                            <script>
+                                const Quote_scriptURL = 'https://script.google.com/macros/s/AKfycbwrafJKJ--BbtVMNHWHMEFB3mapcldCTz7mlL4n8pCzeXCBvL9v4_mcQKjI3MW1loSVhg/exec'
+                                const Quote_Form = document.forms['Quote-Form']
+        
+                                Quote_Form.addEventListener('submit', e => {
+                                e.preventDefault()
+                                fetch(Quote_scriptURL, { method: 'POST', body: new FormData(Quote_Form), redirect: 'follow'})
+                                  .then(response => 
+                                  {
+                                    alert('Your form has been submitted!');
+                                    window.location.replace("index.html");
+                                  })
+                                  .catch(error => 
+                                  {
+                                    alert('Something went wrong, try again later?');
+                                  })
+                                })
+        
+                            </script>
+                        </div>
+                    </div>
+                </div>
+        
+                <!--end: form-->
+
+        <!--footer-->
+        <div id="footer">
+            <div class="contentContainer">
+                <div class="footerRightBox displayNo">
+                    <p id="socialTitle">Connect with us</p>
+                    <div id="socialsBox">
+                        <div class="socials inst"></div>
+                        <div class="socials fb"></div>
+                        <div class="socials tw"></div>
+                    </div>
+                </div>
+                <div class="footerLeftBox">
+                    <div id="footerLogoBox">
+                        <div id="footerLogo"></div>
+                    </div>
+                    <div id="copyright">Copyright &copy; 2022 Land Freight Forwarding inc. All rights reserved</div>
+                </div>
+                <div class="footerRightBox displayYe">
+                    <p id="socialTitle">Connect with us</p>
+                    <div id="socialsBox">
+                        <a href="https://www.instagram.com/"><div class="socials inst"></div></a>
+                        <a href="https://www.facebook.com/"><div class="socials fb"></div></a>
+                        <a href="https://twitter.com/"><div class="socials tw"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end: footer-->
+
+    </div>
+    <!--end: body container-->
+</body>
+</html>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("thewholebody").style.marginLeft = "-250px";
+        document.getElementById("menuBox").style.display = "none";
+        document.getElementById("grayCover").style.opacity = ".5";
+        document.getElementById("grayCover").style.zIndex = "4";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("thewholebody").style.marginLeft = "0";
+        document.getElementById("menuBox").style.display = "block";
+        document.getElementById("grayCover").style.opacity = "0";
+        document.getElementById("grayCover").style.zIndex = "0";
+    }
+</script>
+<script>
+    const tx = document.getElementsByTagName("textarea");
+    for (let i = 0; i < tx.length; i++) {
+        tx[i].setAttribute("style", "height:" + tx[i].scrollHeight + "px;overflow-y:hidden;");
+        tx[i].addEventListener("input", OnInput, false);
+    }
+
+    function OnInput() {
+        this.style.height = "auto";
+        this.style.height = this.scrollHeight + "px";
+    }
+</script>

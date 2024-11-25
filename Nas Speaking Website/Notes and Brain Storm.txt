@@ -1,0 +1,69 @@
+landing page/ home page
+
+sections:
+   nav:
+   make it like jeremy on mobile
+
+   home
+      about
+         picture of you
+         credentials
+         
+         
+      video
+   speaking topics
+       of speaking topics
+      topics:
+         Intro to stem
+         how to succed while presuing Stem (college students or people in training programs)
+         How to make a space for your self in the stem career. 
+   contact section
+   
+   
+   contact page
+   
+   
+gallery page with testemonials
+   
+   
+   
+   Effects:
+   parallax 
+   hover effects
+   items float up as site scrolls down
+   
+   
+   color pallet:
+   
+   https://coolors.co/1c1c1c-daddd8-ecebe4-eef0f2-fafaff
+   
+   
+   
+   
+   
+  
+  
+  Likes websites:
+  
+  https://www.jeremyanderson.org/
+  https://www.jameshardie.com/?loc=refresh
+  
+  
+  I like:
+  
+  https://workmeaningful.com/
+  https://sallyhogshead.com/
+  https://simontbailey.com/
+  
+  
+  
+  
+  to change:
+  make a new mock up with inverted colors to see how it looks.
+  
+  
+  I can start writing code. 
+   
+   
+   
+   

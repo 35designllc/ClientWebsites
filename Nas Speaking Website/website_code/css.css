@@ -1,0 +1,954 @@
+/*body and cover div*/
+
+body, html{
+    background-color: #FAFAFF;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    font-family: Bai Jamjuree;
+    color:#FAFAFF;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+#thewholebody{
+	transition: margin-left .5s;
+  position: relative;
+}
+
+.nasImages{max-width:60vw;}
+
+#grayCover{
+  display:block;
+  width:100%;
+  position:absolute;
+  transition:.3s;
+  height:2000px;
+  background-color:black;
+  opacity:0;
+  top:0;
+  position:fixed;
+}
+
+/*top navigation*/
+#banner, #stickyBanner{
+    display:block;
+    float:left;
+    background-color: #1C1C1C;
+    width:100%;
+    height:100px;
+    position: relative;
+    z-index: 3;
+}
+
+#banner{
+  transition: margin-top .5s;
+}
+
+#stickyBanner{
+    height:60px;
+    position: fixed;
+    z-index: 2;
+}
+
+#bannerLogoBox{
+    display:block;
+    width:270px;
+    height:100px;
+    margin:auto;
+    background-image: url("Trandcend\ naratives\ -Wte.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#stickyBannerLogoBox{
+    display:block;
+    float:left;
+    margin-left:1%;
+    width:70px;
+    height:60px;
+    background-image: url("Trandcend\ naratives\ -Wte\ -smaller.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#menuBox{
+    display:block;
+    float:right;
+    margin-right:1.5%;
+    margin-top:15px;
+    width:30px;
+    height:30px;
+    background-image: url("menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: margin-left .5s;
+    cursor:pointer;
+}
+
+/*side nav*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index:2;
+  top: 0;
+  right: 0;
+  background-color: #1C1C1C;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-align:left;
+  font-size: 20px;
+  color: #FAFAFF;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Roboto', sans-serif;
+   font-weight:300;
+}
+
+.sidenav a:hover {
+  color: #8d8d8d;
+}
+
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-left: 50px;
+}
+
+/*side social*/
+
+#sideSocialBox{
+  display:block;
+  float:left;
+  position:fixed;
+  z-index: 0;
+  /*border:1px solid black;*/
+  width:120px;
+  height:100vh;
+}
+
+#socialContainer{
+  display:block;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:50%;
+}
+
+.socialBox{
+  width:100%;
+  height:50px;
+  display:block;
+  float:right;
+  margin-top:30px;
+}
+
+.firstSocial{
+  margin-top:15vh;
+}
+
+.social{
+  width:30px;
+  height:30px;
+  margin:auto;
+  margin-top:10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fb{background-image: url("fb.svg");}
+.in{background-image: url("in.svg");}
+.tw{background-image: url("tw.svg");}
+.inst{background-image: url("inst.svg");}
+
+/*main body container*/
+.mainContainer{
+  display:block;
+  max-width: 1656px;
+  margin:auto;
+  padding-top:100px;
+  position: relative;
+  z-index: 1;
+}
+
+.homeMainContainer{height:8790px;}
+.galleryMainContainer{height:2260px;}
+.contactMainContainer{height:1330px}
+
+
+.section{
+  display:block;
+  float:left;
+  width:100%;
+  height:930px;
+  overflow-x: hidden; 
+  /*border:1px solid black;*/
+}
+
+/*home page sections*/
+.firstConentBox{position:relative;}
+.videoBox{}
+.quotesBox{overflow-x: unset;}
+.aboutBox{color:#1C1C1C}
+.parallaxBox{
+  height:400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("homeParallaxTxt.png");
+}
+.nasTitleBox{
+   height:400px;
+   font-family: Bai Jamjuree;
+}
+
+.nasTitle{
+   width:90%;
+   margin-left:5%;
+   margin-top:150px;
+   font-size:60px;
+   padding:0;
+   color:black;
+   text-align:center;
+   text-transform: uppercase;
+}
+
+.topicsBox{
+  display: flex;
+}
+.testemonialsBox1{}
+.galleryBtnBox{}
+.clientsBox{}
+.requestBtnBox{}
+
+#firstTitle{
+  width:84%;
+  margin-left:8%;
+  font-size:50px;
+  text-transform: uppercase;
+  margin-top:18%;
+}
+
+#firstDesc{
+  width:84%;
+  margin-left:8%;
+  font-size:20px;
+  margin-top:8%;
+}
+
+.vHalf{
+  display:block;
+  float:left;
+  width:50%;
+  height:100%;
+  color:#1C1C1C;
+}
+
+.seperatorWave{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:260px;
+  background-image: url("seperator.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.SmolTitle, .Title, #aboutDesc{
+  width:84%;
+  margin-left:8%;
+  font-size:23px;
+}
+.SmolTitle{margin-top:20%;}
+.Title{font-size:40px; font-weight: 500; margin-top:1%;}
+#aboutDesc{font-size:20px; margin-top:8%; font-weight: 400;}
+.aboutImgBox, #firstImgBox, .nasImages{
+  display:flex;
+  justify-content: center;
+  height:90%;
+  padding-top:11%;
+}
+
+.nasImages{padding-top:0;}
+
+#clientsImgBox{
+  display:block;
+  float:left;
+  width:84%;
+  height:500px;
+  margin-left:8%;
+}
+
+.clientsImgRow{
+  width:100%;
+  height:120px;
+  display:block;
+  float:left;
+  margin-top:5%;
+}
+
+.clientsImg{
+  width:120px;
+  height:120px;
+  display:flex;
+  justify-content: center;
+  float:left;
+  border:1px solid black;
+  margin-left:5%;
+}
+.cFirst{margin-left:0;}
+
+.topic{
+  flex:1;
+  transition:1s;
+  height:100%;
+  width:33%;
+  /*border:1px solid black;*/
+}
+
+.topicCeneter{
+  border-right:1px solid #1C1C1C;
+  border-left:1px solid #1C1C1C;
+}
+.topic:hover{
+  flex:13;
+}
+
+
+
+/*gallery page sections*/
+.galleryParallaxBox{
+  position:fixed;
+  z-index: -1;
+  max-width:1652px;
+}
+.caroucelBox{
+  overflow-x: hidden; 
+  overflow-y: hidden; 
+  position:relative; 
+  z-index: 1; 
+  background-color: #FAFAFF;
+  margin-top:930px;
+  box-shadow: 0px -5px 5px -5px rgb(28 28 28 / 0.3);
+}
+.quotesBox{ background-color: #FAFAFF;}
+
+.nasQuoteHalf{
+  width:100%;
+  height:30%;
+  float:left;
+  color:#1C1C1C;
+  margin-top:7.4%;
+}
+
+.nasQuoteBox{
+  display:block;
+  float:left;
+  height:100%;
+  max-width:600px;
+  margin-left:8%;
+}
+
+.quote2{float:right; margin-left:0%; margin-right:8%;}
+
+.nasQuote{
+  font-size: 40px;
+}
+
+.nasName{
+  font-size:25px;
+  float:right;
+  margin-top:40px;
+}
+
+#quotes{
+  display:block;
+  float:left;
+  width:100%;
+  height:auto;
+  color:#1C1C1C;
+  margin-top:7%;
+}
+
+.quote{
+  display:block;
+  float:left;
+  margin-left:4.55%;
+  width:27%;
+  height:350px;
+}
+
+.lower{
+  margin-top:350px;
+}
+
+.quoteTitle{
+  width:100%;
+  height:60px;
+  font-size:45px;
+  text-transform: uppercase;
+  text-align:center; 
+}
+
+.quoteDesc{
+  width:100%;
+  font-size:30px;
+  text-align:center; 
+  margin-top:20px;
+  margin-bottom:25px;
+}
+.quoteName{
+  width:100%;
+  font-size:23px; 
+  text-align:center; 
+}
+
+.requestBtnBox2{  background-color: #FAFAFF; height:400px;}
+
+.Button{
+  display:block;
+  margin:auto;
+  margin-top:100px;
+  height:81px;
+  padding-top: 30px;
+  width:450px;
+  background-color:#EEF0F2 ;
+  border:1px solid #1C1C1C;
+  color:#1C1C1C;
+  text-align: center;
+  font-size:35px;
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+  box-shadow: 5px 5px 5px 0px #1C1C1C;
+}
+
+.Button:hover{ box-shadow: 0px 0px 0px 0px;}
+
+.centerBtn{
+  margin-top:25%;
+}
+
+.firstBtn{
+  position: relative;
+  width:250px;
+  height:40px;
+  padding-top: 20px;
+  margin-left:8%;
+  font-size:18px;
+  z-index: 1;
+  margin-top:8%;
+}
+
+#parallaxText{
+  display:block;
+  float:left;
+  width:50%;
+  height:80%;
+  color:black;
+  margin-top:10%;
+  font-family: Bai Jamjuree;
+}
+#parallaxTitle{
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+#parallaxDesc{
+  width:50%;
+  font-size: 20px;
+  text-align: left;
+  margin-left:21%;
+  margin-top:5%;
+}
+
+#parallaxImgBox{
+  display:flex;
+  justify-content: center;
+  float:left;
+  width:50%;
+  height:90%;
+}
+.parallaxImg{
+
+}
+
+.caroucel{
+  width:3100px;
+  float:left;
+  height:100%;
+  padding:10px;
+  cursor:pointer;
+  color:#1C1C1C;
+}
+
+/*contact page sections*/
+.contactFormBox{}
+.quotesScrollBox{height:400px}
+
+
+
+#form{
+  display:block;
+  max-width:950px;
+  height:80%;
+  margin:auto;
+  margin-top:5%;
+  background-color: #1C1C1C;
+  border-radius: 1.5%;
+}
+
+#formTitle{
+  display:block;
+  float:left;
+  text-transform: uppercase;
+  font-size:35px;
+  text-align: center;
+  width:100%;
+  margin-top:30px;
+  margin-bottom:30px;
+} 
+
+#leftFormBox, #rightFormBox{
+  display:block;
+  float:left;
+  height:44.5%;
+  width:49%;
+}
+#rightFormBox{margin-left:2%}
+
+.formInput{
+  border:none;
+  border-bottom: 1px solid #FAFAFF;
+  background-color: transparent;
+  padding: 5px 0px;
+  outline: none;
+  color:#FAFAFF;
+  width:80%;
+  float:left;
+  margin-left:10%;
+  margin-top:30px;
+  font-size:17px;
+}
+
+option { 
+  /* Whatever color  you want */
+  background-color: #8d8d8d;
+  padding:5px;
+  height:auto;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FAFAFF;
+  opacity: .7; /* Firefox */
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.15s 0.15s ease-in-out; 
+  text-indent: -100%;
+  opacity: 1;
+}
+
+
+#formTextarea{
+  border:none;
+  border-bottom: 1px solid #FAFAFF;
+  background-color: transparent;
+  outline: none;
+  color:#FAFAFF;
+  width:90%;
+  float:left;
+  margin-left:5%;
+  font-size: 17px;
+  font-family: Bai Jamjuree;
+  height:20px;
+  min-height: 27px;
+  max-height: 180px;
+  resize: vertical;
+}
+
+#sendBtn{
+  border:none;
+  background-color: transparent;
+  font-size: 30px;
+  color:#FAFAFF;
+  float:right;
+  margin-right:4%;
+  margin-top:4%;
+  font-family: Bai Jamjuree;
+}
+
+/*testimonial side scroll*/
+.quotesScrollBox{
+  overflow-x: hidden;
+}
+
+.quotesScroll{
+  width:3100px;
+  float:left;
+  height:350px;
+  padding:10px;
+  cursor:pointer;
+  color:black;
+}
+
+.testBox{
+  display:block;
+  float:left;
+  width:300px;
+  height:100%;
+}
+.testPicBox{
+  display: flex;
+  justify-content: center;
+  width:150px;
+  height:150px;
+  margin:auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.testDesc{
+  display:block;
+  width:100%;
+  height:125px;
+  float:left;
+  margin-top:20px;
+ /* margin-bottom:10px; */
+  text-align: center;
+  font-size: 19px;
+}
+.testName{
+  display:block;
+  width:100%;
+  height:30px;
+  float:left;
+  text-align: center;
+  font-size: 17px;
+}
+
+.borderRight{
+  height:70%;
+  width:1px;
+  margin-top:2%;
+  margin-left:22px;
+  margin-right:22px;
+  border-right:1px solid #1C1C1C;
+  display:block;
+  float:left;
+}
+
+
+
+.showBig{display:block}
+.showSmall{display:none}
+
+/*responsiveness*/
+@media only screen and (max-width: 1896px){
+  .mainContainer{margin-left:120px;}
+}
+
+@media only screen and (max-width: 1068px){
+   .showBig{display:none}
+   .showSmall{display:block}
+   
+  .section{max-width:1068px;}
+  
+  .nasTitleBox{height:200px;}
+  .nasTitle{font-size:max(5vw, 30px); margin-top:75px}
+  
+  /*side social*/
+  #sideSocialBox{display:none;}
+
+
+  /*contact page*/
+  .mainContainer{margin-left:0px;}
+  .contactFormBox{height:1300px}
+  #form{margin-top: 10%;}
+  #leftFormBox, #rightFormBox{
+    width:100%;
+    height:305px;
+  }
+  #formTitle{width:90%; margin-left:5%;}
+  #rightFormBox{ margin-left:0;}
+  #formTextarea{width:80%; margin-left:10%; margin-top:30px}
+  .quotesScroll{padding-left:40px;}
+
+  /*gallery page*/
+  .quote{width:90%; margin-left:5%;  margin-top:3%; height:250px}
+  .quoteTitle{font-size:30px;}
+  .quoteDesc{font-size:22px; margin-top:0;}
+  #parallaxText{width:90%; height:auto; margin-left:5%;}
+  #parallaxImgBox{width:90%; margin-left:5%; height:max(70%,70vw); margin-top:5%;}
+  .parallaxImg{margin-top:0%;}
+  #parallaxDesc{display:none;}
+  .galleryParallaxBox{height:100vh;}
+
+
+  /*button*/
+  .Button{width:250px; height:50px; font-size:18px;}
+
+  /* home page*/
+  .homeMainContainer{height:auto;}
+  .videoBox{height:max(400px, 80vw)}
+  .topicsBox{height:max(900px, 80vw); overflow: hidden;  -webkit-flex-direction: column; 
+    flex-direction: column; }
+  .topic{  width:100%; height:33%;}
+  .vHalf{width:100%; height:50%;}
+  #firstTitle, #firstDesc{text-align: center; margin-top:2%}
+  .firstBtn{margin:auto;}
+  #firstDesc, .firstBtn{margin-top:20px;}
+  .aboutImgBox, #firstImgBox{padding-top:0; height:100%}
+  .goaway{display:none;}
+  .quotesBox{height:800px}
+  .nasQuoteBox, .quote2{margin:0; width:64%; height:auto; margin-top:15%; margin-left:18%; float:left;}
+  .nasQuote{font-size: 30px;}
+  .nasQuoteHalf{height:50%; margin:0;}
+  .quote{width: 80%; margin-left:10%;}
+  .galleryBtnBox, .requestBtnBox{height:500px;}
+  .aboutBox, .clientsBox{height:auto;}
+  .clientsImgRow{width:90%; padding-left:10%; height:auto; margin-top:0;}
+  .clientsImg{margin-top: 10px ; width:100px; height:100px;}
+  .singleRow{width:100%; height:auto;
+  display:block;float:left;}
+  .biggerHalf{
+    height:500px
+  }
+
+  
+}
+
+
+
+/*test*/
+
+.d_flex-ai_center-jc_center, .click-drag-demo .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.click-drag-demo {
+  width:100%;
+  height:100%;
+}
+.click-drag-demo .cards {
+  display: flex;
+   width: 100%;
+  overflow-x: auto;
+  cursor: pointer;
+}
+.click-drag-demo .cards .card {
+  margin-top:0;
+  box-shadow: 4px 4px 12px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cards{
+   margin-top:60px;
+   padding-top:3vw;
+   padding-bottom:3vw;
+   transition: transform .1s ease-in-out;
+}
+
+
+.card{
+ aspect-ratio: 3 / 2; /*common ratio, like an 800*600px image */
+   margin-left:50px;
+    min-width: 1125px; /* computed height will be 133.33px, which is width/aspect-ratio */
+   
+
+}
+
+
+
+.V{
+ aspect-ratio: 2 / 3; /*common ratio, like an 800*600px image */
+   margin-left:50px;
+    min-width: 500px; /* computed height will be 133.33px, which is width/aspect-ratio */
+    
+  }
+
+  @media only screen and (max-width: 1068px){
+    .grid-img{width:100%; height:100%;}
+    .card{min-width:75vw; height:50vw;}
+    .V{min-width:30vw; height:50vw;}
+    .caroucelBox{height:70vw;}
+    .quotesScrollBox{height:auto;}
+  
+  }
+  
+
+
+
+.last{
+   margin-right:50px;
+}
+
+
+.click-drag-demo .cards.active {
+   transform: scale(1.01);
+   cursor: grabbing;
+}
+
+
+.slider__navi {
+	position: absolute;
+	top: 95%;
+	right: 1.5%;
+	height:50px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	z-index: 2;
+
+}
+
+.slider__navi a {
+	display: inline-block;
+	height: 8px;
+	max-width: 8vw;
+	width:100px;
+	margin: 20px 13.5px;
+	text-indent: -9999px;
+	box-shadow: none;
+	border: none;
+	background: rgba(0,0,0,0.2);
+		transition:.3s;
+}
+
+.slider__navi a:hover{
+	height:15px;
+}
+
+.slider__navi a.active {
+	background: rgba(255,255,255,1);
+}
+
+
+.contactCard{
+  
+  margin-left:50px;
+   min-width: 300px; /* computed height will be 133.33px, which is width/aspect-ratio */
+   max-width:300px;
+   height:400px;
+   margin: 0;
+   background: transparent; /* so any image bleed is shown*/
+   color:#1C1C1C;
+
+           background-image: none;
+           box-shadow: none !important;
+}
+
+.contactCards{
+ padding:0;
+ margin:0;
+ box-shadow: none;
+}
+
+
+/*modal content*/
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Stay in place */
+  z-index: 7; /* Sit on top */
+  padding-top: 60px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+/* The Close Button */
+.close {
+  position: fixed;
+  top: 50px;
+  right: 35px;
+	font-size: 30px;
+	color: #818181;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+  
+  .homequote{ height:auto;}
+
+  .nasImages{max-width:100vw;}
+
+  #clientsImgBox{margin-top:30px;}
+
+  .clientsImg{width:20vw; height:20vw;}
+}
+

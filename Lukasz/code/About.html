@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="SHORTCUT ICON" href="media/HandLogoTab.png" type="image/x-icon" />
+    <link rel="ICON" href="media/HandLogoTab.png" type="image/ico" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body id="thewholebody" class="yellow">
+
+
+
+    <!--top navigation-->
+    <div id="stickyBanner">
+        <a href="index.html"><div id="stickyBannerLogoBox"></div></a>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Quote.html">Quote</a>
+            <a href="https://landfreightforwardingcarriers.rmissecure.com/"><div style="display:inline-block; color:#FFD131">Carrier</div></a>
+        </div>
+        <div id="menuBox" onclick="openNav()"></div>
+    </div>
+    <!--end: top navigation-->
+
+    <!--body container-->
+    <div class="mainContainer about">
+
+        <!--who we are section-->
+        <div class="section black">
+            <div class="contentContainer">
+                <div id="aboutPicsBox">
+                    <div class="aboutPicRow1 displayYeYe">
+                        <div class="aboutPic apOne"></div>
+                        <div class="aboutPic apThree"></div>
+                    </div>
+                    <div class="aboutPicRow2 displayYeYe">
+                        <div class="aboutPic apTwo"></div>
+                        <div class="aboutPic apFour"></div>
+                    </div>
+                    <div class="aboutPicCol displayYe laterPush displayNoNo">
+                        <div class="aboutPic apThree biggar"></div>
+                    </div>
+                </div>
+                <div id="aboutTxtBox">
+                    <div id="aboutTitle">Who <div style="display:inline-block; color:#FFD131">We</div> Are</div>
+                    <div id="aboutText">
+                        If you need to ship your freight and are looking for reliable, efficient, and affordable options, then
+                        you’re looking in the right place. Land Freight Forwarding was established to help connect
+                        shippers and carriers by offering our best rates and services in the logistics industry. Our goal is
+                        to make transporting goods as seamless as possible.
+                        <br>
+                        <br>
+                        We are dedicated to establishing new relationships with clients to meet their needs and provide
+                        them with hassle-free shipment solutions. Our extended network of carriers ensures we find the
+                        right fit for you. You can request a quote at any time. Learn more about Land Freight
+                        Forwarding by reading below!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end: who we are section-->
+        
+        <div class="section parallax"></div>
+
+        <!--empolyee section-->
+        <div class="section black">
+            <div class="contentContainer">
+                <div class="aboutPeopleBox">
+                    <div class="aboutPeoplePic firstPeoplePic"></div>
+                    <div class="aboutPeopleTextBox">
+                        <div class="aboutPeopleName">Lukasz Kupiec</div>
+                        <div class="aboutPeoplePos">Business Development Manager</div>
+                        <div class="aboutPeopleText"></div>
+                    </div>
+                </div>
+                <div class="aboutPeopleBox">
+                    <div class="aboutPeoplePic"></div>
+                    <div class="aboutPeopleTextBox">
+                        <div class="aboutPeopleName">Bogdan Kupiec</div>
+                        <div class="aboutPeoplePos">VP of Operations</div>
+                        <div class="aboutPeopleText"></div>
+                    </div>
+                </div>
+                <div class="aboutPeopleBox">
+                    <div class="aboutPeoplePic"></div>
+                    <div class="aboutPeopleTextBox">
+                        <div class="aboutPeopleName">Maxim Balakin</div>
+                        <div class="aboutPeoplePos">President and CEO</div>
+                        <div class="aboutPeopleText"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end: empolyee section-->
+
+        <!--form-->
+        <div class="section autoHeightSection">
+            <div class="contentContainer contactContainer">
+                <div class="formBox contactForm">
+                    <form id="form" method="post" name="Contact-Form" autocomplete="off">
+                        <div class="contactTitle">Want to know more?</div>
+                        <div id="leftFormBox">
+                            <input class="formInput" type="text" name="First_Name" placeholder="First Name" required />
+                        </div>
+                        <div id="rightFormBox">
+                            <input class="formInput right" type="text" name="Last_Name" placeholder="Last Name" required />
+                        </div>
+                        <div id="longFormBox">
+                            <input class="formInput long" type="text" name="Email" placeholder="Email" required />
+                            <input class="formInput long" type="text" name="Phone" placeholder="Phone Number"  required/>
+                        </div>
+                        <textarea id="formTextarea" name="Shipment_Details" placeholder="Shipment Details" ></textarea>
+                        <input id="sendBtn" type="submit" value="submit" />
+                    </form>
+                    <script>
+                        const Contact_scriptURL = 'https://script.google.com/macros/s/AKfycbxwfhR42C7gOZsLT497Ne7kHOL5tD-kHihiyMTBXNRJt4G7cn5LW0lTlmhpVOrWkZ5P/exec'
+                        const Contact_Form = document.forms['Contact-Form']
+
+                        Contact_Form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(Contact_scriptURL, { method: 'POST', body: new FormData(Contact_Form), redirect: 'follow'})
+                          .then(response => 
+                          {
+                            alert('Your form has been submitted!');
+                            window.location.replace("index.html");
+                          })
+                          .catch(error => 
+                          {
+                            alert('Something went wrong, try again later?');
+                          })
+                        })
+
+                    </script>
+                </div>
+                <div class="line displayNo"></div>
+                <div id="contactBox">
+                    <div class="gmap displayNo">
+                        <iframe class="displayNo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760602.8921292571!2d-88.60996975590365!3d41.86908629790049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef7b7e29608f3%3A0x32e6e1d6be9fff2!2s29W044%20Shell%20Lake%20Dr%2C%20Naperville%2C%20IL%2060564!5e0!3m2!1sen!2sus!4v1662927650557!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="line displayNo mroepush"></div>
+                    <div class="contactTitle smaller">Our contacts</div>
+                    <div id="contactInfoBox">
+                        <div class="contactInfo">
+                            <div class="contactPic email"></div>
+                            <div class="contactWay">freights@landfreightforwarding.com</div>
+                        </div>
+                        <div class="contactInfo">
+                            <div class="contactPic phone"></div>
+                            <div class="contactWay">224-619-6828</div>
+                        </div>
+                        <div class="contactInfo">
+                            <div class="contactPic map"></div>
+                            <div class="contactWay">29W044 Shell Lake Dr, Naperville, IL 60564</div>
+                        </div>
+                        <div class="contactInfo">
+                            <div class="contactPic clock"></div>
+                            <div class="contactWay">Mon-Fri 9:00 am – 5:00 pm</div>
+                        </div>
+                    </div>
+                    <div class="line displayYe"></div>
+                    <div class="gmap displayYe">
+                        <iframe class="displayYe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760602.8921292571!2d-88.60996975590365!3d41.86908629790049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef7b7e29608f3%3A0x32e6e1d6be9fff2!2s29W044%20Shell%20Lake%20Dr%2C%20Naperville%2C%20IL%2060564!5e0!3m2!1sen!2sus!4v1662927650557!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--end: form-->
+
+        <!--footer-->
+        <div id="footer">
+            <div class="contentContainer">
+                <div class="footerRightBox displayNo">
+                    <p id="socialTitle">Connect with us</p>
+                    <div id="socialsBox">
+                        <a href="https://www.instagram.com/"><div class="socials inst"></div></a>
+                        <a href="https://www.facebook.com/"><div class="socials fb"></div></a>
+                        <a href="https://twitter.com/"><div class="socials tw"></div></a>
+                    </div>
+                </div>
+                <div class="footerLeftBox">
+                    <div id="footerLogoBox">
+                        <div id="footerLogo"></div>
+                    </div>
+                    <div id="copyright">Copyright &copy; 2022 Land Freight Forwarding inc. All rights reserved</div>
+                </div>
+                <div class="footerRightBox displayYe">
+                    <p id="socialTitle">Connect with us</p>
+                    <div id="socialsBox">
+                        <div class="socials inst"></div>
+                        <div class="socials fb"></div>
+                        <div class="socials tw"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end: footer-->
+
+    </div>
+    <!--end: body container-->
+</body>
+</html>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("thewholebody").style.marginLeft = "-250px";
+        document.getElementById("menuBox").style.display = "none";
+        document.getElementById("grayCover").style.opacity = ".5";
+        document.getElementById("grayCover").style.zIndex = "4";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("thewholebody").style.marginLeft = "0";
+        document.getElementById("menuBox").style.display = "block";
+        document.getElementById("grayCover").style.opacity = "0";
+        document.getElementById("grayCover").style.zIndex = "0";
+    }
+</script>
+<script>
+    const tx = document.getElementsByTagName("textarea");
+    for (let i = 0; i < tx.length; i++) {
+        tx[i].setAttribute("style", "height:" + tx[i].scrollHeight + "px;overflow-y:hidden;");
+        tx[i].addEventListener("input", OnInput, false);
+    }
+
+    function OnInput() {
+        this.style.height = "auto";
+        this.style.height = this.scrollHeight + "px";
+    }
+</script>
